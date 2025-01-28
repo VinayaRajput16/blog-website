@@ -1,0 +1,102 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+.footer {
+    /* background-color: #073b5c; Light gray background */
+    background-image: linear-gradient(to right, black , #075c91);
+    padding: 20px;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white; /* Dark gray text */
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    justify-content: space-between; /* Distribute space evenly */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  .footer-logo img{
+    max-width: 150px;
+  }
+  .column {
+    flex: 1; /* Each column takes equal width */
+    min-width: 150px; /* Prevent columns from becoming too narrow */
+    margin: 10px;
+  }
+  
+  .column h3 {
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration: none;
+    position: relative;
+  }
+  .column li:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background:white;
+    transition: width 0.3s ease 0s;
+    width: 0;
+  }
+  .column li:hover:after { 
+    width: 50%; 
+    /* left: 0;  */
+  }
+  
+  .column.contact .social-icons {
+      display: flex;
+      gap: 10px; /* space between icons */
+      font-size: 1.2rem;
+  }
+  
+  
+  .bottom-bar {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bottom-links {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+  }
+
+ 
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack columns vertically */
+    }
+  }
+  
+  @media (max-width: 480px) {
+      .bottom-bar {
+          flex-direction: column;
+      }
+      .bottom-links {
+          flex-direction: column;
+          gap: 5px;
+      }
+  }

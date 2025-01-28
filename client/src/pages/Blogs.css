@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.blog-category{
+   padding: 15px 25px;
+}
+.hero-section-blogs {
+    height: 350px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-section-blogs h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
+  
   --maincol: #002b5b;
   --rad: .7rem;
   --dur: .3s;
@@ -53,8 +54,8 @@
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: var(--maincol);
-  font-size: 1.2rem;
+  color: #1a5291;
+  font-size: 1.1rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 5px;

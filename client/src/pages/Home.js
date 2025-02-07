@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import BlogCard from "../components/BlogCard";
 import Footer from "../components/Footer";
 import Services from '../components/Services';
+import BookingSection from "../components/BookingSection";
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
 
       <BlogCard/>
       <Services/>
+      <BookingSection/>
       <Footer/>
     </div>
   );

@@ -43,8 +43,8 @@ const Footer = () => {
         </div>
         <div className="column contact">
           <h3>Contact Us</h3>
-          <p>+91 9999 999 999</p>
-          <p>youremailid.com</p>
+          <p>+91 8856979693</p>
+          <p>rajputvinaya16903@gmail.com</p>
           <div className="social-icons">
             <FaFacebook />
             <FaGooglePlus />

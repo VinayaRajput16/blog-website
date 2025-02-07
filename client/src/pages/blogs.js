@@ -4,20 +4,21 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Card from "../components/Card"; // Import the Card component
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
+import AllPostImg from "./images/All-posts.png";
 import "./Blogs.css";
 
 const heroData = {
   technology: {
     headline: "Latest in Technology",
-    image: "https://images.pexels.com/photos/256302/pexels-photo-256302.jpeg?auto=compress&cs=tinysrgb&w=800"}, // Replace with your actual image paths
-  'web development':{
+    image: AllPostImg }, // Replace with your actual image paths
+    'web development':{
     image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800"},
   poem: {
     image:"https://images.pexels.com/photos/1151513/pexels-photo-1151513.jpeg?auto=compress&cs=tinysrgb&w=800"},
   default: {
     headline: "Welcome to Our Blog",
-    image:"https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800"}, // Fallback image
+    image:AllPostImg}, // Fallback image
 };
 
 const Blogs = () => {
@@ -33,7 +34,6 @@ const Blogs = () => {
     return <div>Loading...</div>; // Loading state while data is being fetched
   }
 
-  
   return (
     <div className="blogs-page">
       <Navbar />

@@ -1,6 +1,6 @@
 .services-section {
     background-color: #ececec;
-    padding: 50px 0;
+    padding: 50px 0 70px 0;
   }
   
   .container {
@@ -11,8 +11,9 @@
   
   .section-title {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
+    color: #002b5b; 
   }
   
   .services-list {
@@ -33,8 +34,8 @@
   
   .service-card h3 {
     font-size: 1.8rem;
-    color: #333;
     margin-bottom: 15px;
+    color: rgba(0, 43, 91, 0.8);
   }
   
   .service-card p {

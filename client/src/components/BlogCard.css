@@ -10,16 +10,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .category-nav {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background-color: rgb(13, 83, 140);
   /* Light background */
-  padding: 40px 0;
+  padding: 30px 0;
   border-bottom: 2px solid #ccc;
   box-shadow: 4px 4px 6px rgb(0, 0, 0);
   /* Subtle bottom border */
@@ -30,18 +28,21 @@
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color:#ffffff;
+  color:#002b5b;
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 25px;
   font-family: "Rubik", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  transition: color 0.1s ease-in-out;
 }
 
 .category-link:hover {
-  color: rgb(183, 222, 240);
+  background-color: #075c91;
+  color: #fff;
+  font-weight: 400;
 }
 
 .recent-post-card .blog-card {
@@ -236,7 +237,7 @@
 
 .blog-header {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0;
   line-height: 1.5em;
   padding-bottom: 15px;

@@ -30,7 +30,7 @@ const Card = () => {
 
   return (
     <div className="other-posts">
-      <h2 className="blog-header">{category ? `${category} Posts` : 'All Posts'}</h2>
+      <h2 className="blog-header" style={{ marginBottom: '20px' }}>{category ? `${category} Posts` : 'All Posts'}</h2>
       <div className="other-posts-container">
         {blogData.map((blog) => (
           <div key={blog._id} className="blog-card">

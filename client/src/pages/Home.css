@@ -11,7 +11,7 @@ body {
 }
 
 .hero-section {
- border-bottom: 4px solid rgb(0, 0, 0);
+ /* border-bottom: 2px solid rgb(0, 0, 0); */
 }
 
 .hero-section .hero-image {
@@ -101,40 +101,61 @@ body {
   justify-content: center;
   gap: 1rem;
   font-family: "Rubik", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-weight: 500;
+}
+
+/* Shared Button Styles */
+.cta-primary, .cta-secondary {
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+
+  overflow: hidden;
 }
 
 .cta-primary, .cta-secondary {
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  transition: all 0.3s ease;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
+/* Primary Button - Solid Gradient */
 .cta-primary {
-  background-color: rgb(13, 83, 140);
   color: #ffffff;
+  background: linear-gradient(45deg, #0d538c, #1d77c1);
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cta-primary:hover {
-  background-color: rgb(29, 119, 193);
-   /* Slightly darker blue for hover */
-  transform: scale(1.05); /* Subtle scaling effect */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
 }
 
+.cta-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Secondary Button - Outlined to Filled on Hover */
 .cta-secondary {
-  background-color: transparent;
-  color: #000000;
-  border: 2px solid var(--maincol);
+  color: #0d538c;
+  background: transparent;
+  border: 2px solid #0d538c;
 }
 
 .cta-secondary:hover {
-  background-color:rgb(13, 83, 140);
+  background: linear-gradient(45deg, #0d538c, #1d77c1);
   color: #ffffff;
-  transform: scale(1.05); /* Subtle scaling effect */
+  border-color: transparent;
+  transform: translateY(-3px);
 }
+
+.cta-secondary:active {
+  transform: translateY(0);
+}
+
 

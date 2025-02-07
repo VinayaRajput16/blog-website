@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Koh Santepheap", serif;
+    font-style: normal;
+  }
+.booking-headings{
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #002b5b;
+    margin-bottom: 20px;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+  }
+  .sub-heading {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #002b5b;
+    margin-bottom: 20px;
+  }
+.book-service{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.sticker{
+    max-width: 45%;
+}
+
+  .card {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #79a3d5;
+  }
+  
+  .form .input {
+    padding: 10px;
+    border: 2px solid #5c94d8;
+    border-radius: 5px;
+    font-size: 16px;
+    color: gray;
+    background-color: #ffffff;
+  }
+  
+  .form.textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .form .book-button {
+    padding: 10px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .form .book-button:hover {
+    background: #3d83ce;
+  }
+  
